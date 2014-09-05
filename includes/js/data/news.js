@@ -1,5 +1,5 @@
 /**
- * Created by hillga on 9/4/2014.
+ * Created by Gary Hill on 9/4/2014.
  */
 (function () {
 
@@ -9,43 +9,31 @@
 
     //CREATE NEWS ITEMS AND ADD TO ARRAY
 
-    //Item 1
-    title = "My First Item";
-    pubDate = "6/19/2014";
+    title = "New Software Study Group";
+    pubDate = "9/4/2014";
     link = "#";
-    content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consequat venenatis ex, ut tincidunt leo. Mauris sit amet sem sed dolor consectetur tincidunt eget at odio. Ut arcu sapien, egestas a dolor a, mollis maximus sapien. Sed at sodales lorem. Ut tellus dolor, ultrices quis porttitor in, cursus in enim. Proin facilisis risus elit, vel tristique dolor mattis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit enim augue, eu accumsan eros tristique at. Nam id felis sed justo lobortis aliquet vitae eu turpis. Cras in accumsan tellus. Curabitur tempor ex vel luctus tristique. Quisque non pretium sapien.";
+    content = "I am expanding my work-based software study group to include a few more friends and former colleagues.  We'll be meeting one per week to work on algorithms, share knowledge with each other and exchange project ideas.";
     item = new MYSITE.domain.newsItem(title, pubDate, link, content);
     news.push(item);
 
-    //Item 2
-    title = "My Second Item";
-    pubDate = "6/19/2014";
+    title = "Fall Travel Plans";
+    pubDate = "9/1/2014";
     link = "#";
-    content = "This is just a little test content";
+    content = "<ul><li>October - Rio de Janeiro</li><li>November - Bogota</li><li>December - Atlanta</li></ul>";
     item = new MYSITE.domain.newsItem(title, pubDate, link, content);
     news.push(item);
 
-    //Item 3
-    title = "My Third Item";
-    pubDate = "6/19/2014";
+    title = "Posted Minesweeper to GitHub";
+    pubDate = "8/26/2014";
     link = "#";
-    content = "This is just a little test content";
+    content = "Just posted my own version of the game Minesweeper.  I decided to build a javascript version as a fun side project and to get more familiar with GitHub.";
     item = new MYSITE.domain.newsItem(title, pubDate, link, content);
     news.push(item);
 
-    //Item 4
-    title = "My Fourth Item";
-    pubDate = "6/19/2014";
+    title = "Brazilian Jiu Jitsu in Brazil";
+    pubDate = "8/10/2014";
     link = "#";
-    content = "This is just a little test content";
-    item = new MYSITE.domain.newsItem(title, pubDate, link, content);
-    news.push(item);
-
-    //Item 5
-    title = "My Fifth Item";
-    pubDate = "6/19/2014";
-    link = "#";
-    content = "This is just a little test content";
+    content = "I'll be traveling to Rio in October to train a group of friends from Romulo Melo Jiu Jitsu Academy in San Francisco.  This will be our second time training in Rio.";
     item = new MYSITE.domain.newsItem(title, pubDate, link, content);
     news.push(item);
 

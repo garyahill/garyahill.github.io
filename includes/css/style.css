@@ -34,12 +34,18 @@ hr{
 	border:1px solid #999;
 	border:1px solid rgba(93, 132, 155, 0.5);
 	padding:0px;
-	width:400px;
+	width:250px;  /* GH Changed Property (400px) */
 }
 .popover-title {
+    font-size: 12px;  /* GH Added Property*/
 	background:#86a4b6;		
 	background:rgba(93, 132, 155, 1);
 	color:#fff;
+}
+
+/* GH Added Class*/
+.popOverText {
+    font-size: 12px;
 }
 
 /* Custom CSS */
@@ -149,23 +155,19 @@ hr{
 	background: url(../img/email.png) no-repeat;
 }
 
-#social_icons li#facebook a {
-	background: url(../img/facebook.png) no-repeat;
-}
-
-#social_icons li#twitter a {
-	background: url(../img/twitter.png) no-repeat;
-}
-
-#social_icons li#googleplus a {
-	background: url(../img/googleplus.png) no-repeat;
-}
-
 #social_icons li#linkedin a {
-	background: url(../img/linkedin.png) no-repeat;
+    background: url(../img/linkedin.png) no-repeat;
 }
 
-#BlogFeed, #TwitterFeed, #githubRepo {
+#social_icons li#wordpress a {
+    background: url(../img/wordpress.png) no-repeat;
+}
+
+#social_icons li#github a {
+	background: url(../img/github.png) no-repeat;
+}
+
+#BlogFeed, #TwitterFeed, #NewsFeed, #githubRepo {
 	background-color:transparent;
 	border:1px solid #999;
 	border:1px solid rgba(93, 132, 155, 0.5);
@@ -174,6 +176,14 @@ hr{
 
 #TwitterFeed{
 	margin-top:40px;
+}
+
+.NewsTitle{
+    font-weight:bold;
+    color: #2F5367;
+    font-style: italic;
+    margin:5px 0px 0px 10px;
+    padding-top:3px;
 }
 
 .ItemTitle{
