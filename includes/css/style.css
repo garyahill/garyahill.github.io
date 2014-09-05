@@ -1,0 +1,226 @@
+/* CSS Over-rides for twitter bootstrap*/
+body{
+	padding-top:0px;
+	background:#777;
+	padding-bottom:0px
+}
+
+p{
+	text-align:justify;
+	color: #444;
+}
+
+hr{
+	border:0px solid #fff;
+	border-top: 1px solid #999;
+	border-top: 1px solid rgba(93, 132, 155, 0.5);
+	padding-bottom:0px;
+	padding-top:0px;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.thumbnail{
+	padding:0px;
+}
+
+.thumbnail:hover{
+	background:#d0dce3;
+	background:rgba(93, 132, 155, 0.2);
+}
+
+.popover-inner {
+	background:transparent;
+	border:1px solid #999;
+	border:1px solid rgba(93, 132, 155, 0.5);
+	padding:0px;
+	width:400px;
+}
+.popover-title {
+	background:#86a4b6;		
+	background:rgba(93, 132, 155, 1);
+	color:#fff;
+}
+
+/* Custom CSS */
+.pageContainer{
+	background: url(../img/bg.png) repeat;
+	margin-top:30px;
+	min-height:850px;
+	height:100%;
+}
+
+.leftColumn{
+	height:100%;
+	border-right:1px solid #999;
+	border-bottom:1px solid #999;
+	border-right:1px solid rgba(93, 132, 155, 0.5);
+	border-bottom:1px solid rgba(93, 132, 155, 0.5);
+	width:100%;
+	background-color: #dbe4e9;
+	background-color: rgba(93, 132, 155, 0.1);
+	padding:30px;
+	padding-left:50px;
+	padding-right:50px;
+}
+
+.rightColumn{
+	padding:30px;	
+	padding-right:60px;
+	padding-top:30px;
+}
+
+.name{
+	font-family:omnes-pro-1,omnes-pro-2;
+	font-size:26px;
+	font-weight:bold;
+	color:#2F5367;
+}
+
+.name a{
+	color:#2F5367;
+	text-decoration:none;
+}
+
+.name a:hover{
+	color:#2F5367;
+	text-decoration:none;
+}
+
+.role
+{
+	font-size:12px;
+	color:#5E869D;
+	padding-bottom:15px;
+	margin-bottom:15px;
+	border-bottom:1px solid #999;
+	border-bottom:1px solid rgba(93, 132, 155, 0.5);
+}
+
+.topmenu{
+	margin-bottom:40px;
+	margin-right:0px;
+}
+
+.topmenu li.active a{
+	background-color: #86a4b6;
+	background-color: rgba(93, 132, 155, 0.5);
+	color:#333;
+}
+
+.topmenu li.active a:hover{
+	background-color: #86a4b6;
+	background-color: rgba(93, 132, 155, 0.5);
+	color:#333;
+}
+
+.topmenu li a:hover{
+	background-color: #d0dce3;
+	background-color: rgba(93, 132, 155, 0.2);
+}
+
+#social_icons {
+  	margin: 20px 0 0;
+}
+
+#social_icons li {
+  	display: inline-block;
+  	height: 34px;
+  	width: 40px; 
+}
+
+#social_icons li a {
+	display: inline-block;
+	position: relative;
+	text-indent: -9999px;
+	height: 34px;
+  	width: 34px;
+}
+
+#social_icons li a span {
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	bottom: 0; 
+	right: 0;
+}
+
+#social_icons li#email a {
+	background: url(../img/email.png) no-repeat;
+}
+
+#social_icons li#facebook a {
+	background: url(../img/facebook.png) no-repeat;
+}
+
+#social_icons li#twitter a {
+	background: url(../img/twitter.png) no-repeat;
+}
+
+#social_icons li#googleplus a {
+	background: url(../img/googleplus.png) no-repeat;
+}
+
+#social_icons li#linkedin a {
+	background: url(../img/linkedin.png) no-repeat;
+}
+
+#BlogFeed, #TwitterFeed, #githubRepo {
+	background-color:transparent;
+	border:1px solid #999;
+	border:1px solid rgba(93, 132, 155, 0.5);
+	margin-top:30px;
+}
+
+#TwitterFeed{
+	margin-top:40px;
+}
+
+.ItemTitle{
+	font-weight:normal;
+	margin:5px 0px 0px 10px;
+	padding-top:3px;
+
+}
+
+.ItemTitle a{text-decoration:none }
+
+.ItemTitle a:hover{text-decoration:underline }
+
+.ItemContent{
+	padding:1px 3px 3px 10px;
+	color:#555;
+}
+
+.ItemDate{
+	font-size:11px;
+	color:#5E869D;
+	margin-left:10px;
+}
+
+.feedTitle{
+	margin-top:5px;
+	margin-left:10px;
+	color:#2F5367;
+	font-weight:normal;
+	font-size:24px;
+}
+
+.feedFooter{
+	padding-top:0px;
+	padding-right:15px;
+	text-align:right;
+}
+
+.sectionTitle{
+	margin-top:5px;
+	color:#2F5367;
+	font-weight:normal;
+	margin-bottom:5px;
+	font-size:24px;
+}
+
+.projectTitle{
+	color:#2F5367;
+	margin-bottom:5px;
+}
