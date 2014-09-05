@@ -3,9 +3,9 @@ $(function(){
 	$('#BlogFeed').FeedEk({
 		Type:'Blog',
 		Title : 'Recent Posts',
-		FeedUrl : 'http://blog.anujkumar.com/rss', //TODO: Provide link to your blog rss feed here
+		FeedUrl : 'https://garyahill.wordpress.com/feed',
 		Source: 'Remote',  //GH: Added this Property
-        SourceUrl : 'http://blog.anujkumar.com', //TODO: Provide link to your blog here
+        SourceUrl : 'https://garyahill.wordpress.com',
 		MaxCount : 3, //Maximum number of posts to display
 		ShowDesc : true,
 		ShowPubDate: true,
