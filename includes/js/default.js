@@ -3,26 +3,15 @@ $(function(){
 	$('#BlogFeed').FeedEk({
 		Type:'Blog',
 		Title : 'Recent Posts',
-		FeedUrl : 'https://garyahill.wordpress.com/feed',
+		FeedUrl : 'http://garyahill.wordpress.com/feed/',
 		Source: 'Remote',  //GH: Added this Property
         SourceUrl : 'https://garyahill.wordpress.com',
-		MaxCount : 3, //Maximum number of posts to display
+		MaxCount : 5, //Maximum number of posts to display
 		ShowDesc : true,
 		ShowPubDate: true,
         ShowFooter: true, //GH: Added this Property
 		FooterText:'Visit Blog For More >>' //text to display in footer link
 	});
-/*	$('#TwitterFeed').FeedEk({
-		Type:'Tweets',
-		Title : 'Tweets',
-		FeedUrl : 'https://api.twitter.com/1/statuses/user_timeline.rss?screen_name=anujkkk', //replace anujkkk with your twitter username
-        Source: 'Remote',
-		SourceUrl : 'http://www.twitter.com/anujkkk', //replace anujkkk with your twitter username
-		MaxCount : 3, //maximum number of tweets to display
-		ShowDesc : true,
-		ShowPubDate: true,
-		FooterText:'Follow me @anujkkk' //text to display in footer link
-	});*/
     $('#NewsFeed').FeedEk({
         Type:'News',
         Title : 'News',

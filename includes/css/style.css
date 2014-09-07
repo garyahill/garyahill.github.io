@@ -103,26 +103,48 @@ hr{
 	border-bottom:1px solid rgba(93, 132, 155, 0.5);
 }
 
-.topmenu{
+.topMenu {
 	margin-bottom:40px;
 	margin-right:0px;
 }
 
-.topmenu li.active a{
+.topMenu li.active a{
 	background-color: #86a4b6;
 	background-color: rgba(93, 132, 155, 0.5);
 	color:#333;
 }
 
-.topmenu li.active a:hover{
+.topMenu li.active a:hover{
 	background-color: #86a4b6;
 	background-color: rgba(93, 132, 155, 0.5);
 	color:#333;
 }
 
-.topmenu li a:hover{
+.topMenu li a:hover{
 	background-color: #d0dce3;
 	background-color: rgba(93, 132, 155, 0.2);
+}
+
+.pageMenu{
+    margin-bottom:40px;
+    margin-right:0px;
+}
+
+.pageMenu li.active a{
+    background-color: #86a4b6;
+    background-color: rgba(93, 132, 155, 0.5);
+    color:#333;
+}
+
+.pageMenu li.active a:hover{
+    background-color: #86a4b6;
+    background-color: rgba(93, 132, 155, 0.5);
+    color:#333;
+}
+
+.pageMenu li a:hover{
+    background-color: #d0dce3;
+    background-color: rgba(93, 132, 155, 0.2);
 }
 
 #social_icons {
@@ -184,6 +206,20 @@ hr{
     font-style: italic;
     margin:5px 0px 0px 10px;
     padding-top:3px;
+}
+
+.Summary {
+    font-weight:bold;
+    color: #2F5367;
+    font-style: italic;
+    margin-bottom:20px;
+}
+
+.SectionTitleSmall {
+    font-weight:bold;
+    color: #2F5367;
+    font-style: italic;
+    margin-bottom:5px;
 }
 
 .ItemTitle{

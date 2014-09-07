@@ -52,8 +52,18 @@
                     pubdt = new Date(entry.publishedDate);
                     $('#' + idd).append('<div class="ItemDate">' + pubdt.toLocaleDateString() + '</div>')
                 }
-                if (def.ShowDesc && def.Type != 'Tweets') {
-                    $('#' + idd).append('<div class="ItemContent">' + entry.content + '</div>');
+                if (def.ShowDesc) {
+
+                    switch (def.Type){
+                        case "News":
+                            $('#' + idd).append('<div class="ItemContent">' + entry.content + '</div>');
+                            break;
+                        case "Blog":
+                            $('#' + idd).append('<div class="ItemContent">' + entry.contentSnippet + '</div>');
+                            break;
+                        default:
+                            break;
+                    }
                 }
 
                 if (i < l - 1 || def.ShowFooter) {
@@ -62,7 +72,7 @@
             }
 
             if (def.ShowFooter) {
-                $('#'+idd).append('<p class="feedFooter"><a href="' + def.SourceUrl + '">' + def.FooterText +'</a></p>');
+                $('#'+idd).append('<p class="feedFooter"><a href="' + def.SourceUrl + '" ' + 'target="_blank"' + '>' + def.FooterText +'</a></p>');
             }
         };
 
