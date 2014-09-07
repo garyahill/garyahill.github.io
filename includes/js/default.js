@@ -10,7 +10,7 @@ $(function(){
 		ShowDesc : true,
 		ShowPubDate: true,
         ShowFooter: true, //GH: Added this Property
-		FooterText:'Visit Blog For More >>' //text to display in footer link
+		FooterText:'View Blog For More >>' //text to display in footer link
 	});
     $('#NewsFeed').FeedEk({
         Type:'News',
