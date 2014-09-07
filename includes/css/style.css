@@ -43,11 +43,6 @@ hr{
 	color:#fff;
 }
 
-/* GH Added Class*/
-.popOverText {
-    font-size: 12px;
-}
-
 /* Custom CSS */
 .pageContainer{
 	background: url(../img/bg.png) repeat;
@@ -146,6 +141,16 @@ hr{
     background-color: #d0dce3;
     background-color: rgba(93, 132, 155, 0.2);
 }
+
+.popOverText {
+    font-size: 12px;
+}
+
+.ProjectSummaryText {
+    font-style: italic;
+}
+
+
 
 #social_icons {
   	margin: 20px 0 0;
