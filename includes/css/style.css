@@ -150,7 +150,15 @@ hr{
     font-style: italic;
 }
 
-
+#preLoadOne {
+    background: url(../img/academy.png) no-repeat -9999px -9999px;
+}
+#preLoadOne {
+    background: url(../img/bodiumcastle.png) no-repeat no-repeat -9999px -9999px;
+}
+#preLoadThree {
+    background: url(../img/india.png) no-repeat no-repeat -9999px -9999px;
+}
 
 #social_icons {
   	margin: 20px 0 0;
