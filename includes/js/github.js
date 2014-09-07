@@ -1,11 +1,11 @@
 jQuery.githubUser = function(username, callback) {
 	jQuery.getJSON("https://api.github.com/users/" + username + "/repos", callback);
-}
+};
  
 jQuery.fn.loadRepositories = function(username, limit, link) {
 
     //MY MAIN WEBSITE REPOSITORY
-    var MAIN_REPO_NAME = 'github.io';
+    var MAIN_REPO_NAME = 'garyahill.github.io';
 
     this.empty().append('<div style="text-align:left; padding:3px;"><img src="includes/img/loader.gif" /></div>');
 	var target = this;
@@ -29,7 +29,7 @@ jQuery.fn.loadRepositories = function(username, limit, link) {
 				}
 			n = n+1;
 			});
-		target.append('<p class="feedFooter"><a href="' + link + '">Github Repository >></a></p>');
+		target.append('<p class="feedFooter"><a href="' + link + '">Github Repositories >></a></p>');
 		
 		});
 
