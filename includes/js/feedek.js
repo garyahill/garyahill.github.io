@@ -1,78 +1,87 @@
 /*
-* FeedEk jQuery RSS/ATOM Feed Plugin 
-* http://jquery-plugins.net/FeedEk/FeedEk.html
-* Author : Engin KIZIL 
-* http://www.enginkizil.com
+FeedEk jQuery RSS/ATOM Feed Plugin
+http://jquery-plugins.net/FeedEk/FeedEk.html
+Author : Engin KIZIL
+http://www.enginkizil.com
+
+this plugin has been modified by Gary Hill
+displays 'local data' and various other modifications
 */
-
-
-/*
-  this plugin has been modified by Gary Hill
-  displays 'local data'
- */
 
 (function($){
 	$.fn.FeedEk=function(opt){
-		var def={FeedUrl:'',MaxCount:5,ShowDesc:true,ShowPubDate:true};
-		if(opt){
-			$.extend(def,opt)
-		}
 
-        var idd=$(this).attr('id');
-        var pubdt, localData, entry;
+        var def={FeedUrl:'',MaxCount:5,ShowDesc:true,ShowPubDate:true};
+        var element = $('#'+ $(this).attr('id'));
+        var pubDate, localData, entry;
+
+        //extend def object with opt object
+        if(opt) $.extend(def,opt);
 
         //Exit if we don't have access to remote data and the source isn't local
 		if(def.FeedUrl==null||def.FeedUrl=='' && def.Source !== 'Local'){
-			$('#'+idd).empty();
+            element.empty();
 			return
 		}
 
-        //Empty out tag and show loader
-        $('#'+idd).empty().append('<div style="text-align:left; padding:3px;"><img src="includes/img/loader.gif" /></div>');
+        //empty out tag and show loader
+        element.empty().append('<div style="text-align:left; padding:3px;"><img src="includes/img/loader.gif" /></div>');
 
         var displayFunction = function(data){
 
-            var myData = (data.responseData !== undefined) ? data.responseData.feed.entries : data;
+            //Prep dom elements
+            element.empty();
+            element.append('<h3 class="feedTitle">' + def.Title +'</h3><hr/>');
 
-            $('#'+idd).empty();
-            $('#'+idd).append('<h3 class="feedTitle">' + def.Title +'</h3><hr/>');
+            //remote data we want to process is in a responseData property of the parameter while local data is directly accessible
+            var myData = (data.responseData !== undefined) ? data.responseData.feed.entries : data;
 
             for (var i = 0, l = myData.length; i<l; i++) {
 
+                //get next item
                 entry = myData[i];
+
+                //only show blog entries with the category "Website"
+                if (def.Type === "Blog" && entry.categories.indexOf("Website") < 0) continue;
+
+                //post news items
                 if (def.Type === 'News') {
-                    $('#' + idd).append('<div class="NewsTitle">' + entry.title + '</a></div>');
+                    element.append('<div class="NewsTitle">' + entry.title + '</a></div>');
                 }
                 else {
-                    $('#' + idd).append('<div class="ItemTitle"><a href="' + entry.link + '" target="_blank" >' +
+                    element.append('<div class="ItemTitle"><a href="' + entry.link + '" target="_blank" >' +
                     entry.title + '</a></div>');
                 }
 
+                //add dates to applicable items
                 if (def.ShowPubDate) {
-                    pubdt = new Date(entry.publishedDate);
-                    $('#' + idd).append('<div class="ItemDate">' + pubdt.toLocaleDateString() + '</div>')
+                    pubDate = new Date(entry.publishedDate);
+                    element.append('<div class="ItemDate">' + pubDate.toLocaleDateString() + '</div>')
                 }
+
+                //add different descriptions depending on the item type
                 if (def.ShowDesc) {
 
                     switch (def.Type){
                         case "News":
-                            $('#' + idd).append('<div class="ItemContent">' + entry.content + '</div>');
+                            element.append('<div class="ItemContent">' + entry.content + '</div>');
                             break;
                         case "Blog":
-                            $('#' + idd).append('<div class="ItemContent">' + entry.contentSnippet + '</div>');
+                            element.append('<div class="ItemContent">' + entry.contentSnippet + '</div>');
                             break;
                         default:
                             break;
                     }
                 }
 
+                //don' add horizontal rule after the last item if we aren't showing the footer
                 if (i < l - 1 || def.ShowFooter) {
-                    $('#' + idd).append('<hr/>');
+                    element.append('<hr/>');
                 }
             }
 
             if (def.ShowFooter) {
-                $('#'+idd).append('<p class="feedFooter"><a href="' + def.SourceUrl + '" ' + 'target="_blank"' + '>' + def.FooterText +'</a></p>');
+                element.append('<p class="feedFooter"><a href="' + def.SourceUrl + '" ' + 'target="_blank"' + '>' + def.FooterText +'</a></p>');
             }
         };
 
