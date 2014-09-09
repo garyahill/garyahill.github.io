@@ -41,8 +41,8 @@ displays 'local data' and various other modifications
                 //get next item
                 entry = myData[i];
 
-                //only show blog entries with the category "Website"
-                if (def.Type === "Blog" && entry.categories.indexOf("Website") < 0) continue;
+                //only show blog entries with the tag "website" (note tags appear in the categories array)
+                if (def.Type === "Blog" && entry.categories.indexOf("website") < 0) continue;
 
                 //post news items
                 if (def.Type === 'News') {
