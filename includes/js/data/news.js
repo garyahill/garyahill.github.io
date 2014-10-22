@@ -9,10 +9,17 @@
 
     //CREATE NEWS ITEMS AND ADD TO ARRAY
 
+    title = "HTML5 Conference";
+    pubDate = "10/22/2014";
+    link = "#";
+    content = "The 2 day HTML5 Conference (San Francisco) just wrapped up.  This was my second go around and I found myself in better position to absorb the vast amounts of information this year.  I particularly enjoyed the AngularJS and Web Components talks.";
+    item = new MYSITE.domain.newsItem(title, pubDate, link, content);
+    news.push(item);
+
     title = "Back from Brazil";
     pubDate = "10/19/2014";
     link = "#";
-    content = "I just returned from my 3rd trip to Rio.  Check out my blog post for more details";
+    content = "I just returned from my 3rd trip to Rio.  Check out my blog post for more details.";
     item = new MYSITE.domain.newsItem(title, pubDate, link, content);
     news.push(item);
 
