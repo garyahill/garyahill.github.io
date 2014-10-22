@@ -9,6 +9,13 @@
 
     //CREATE NEWS ITEMS AND ADD TO ARRAY
 
+    title = "Back from Brazil";
+    pubDate = "10/19/2014";
+    link = "#";
+    content = "I just returned from my 3rd trip to Rio.  Check out my blog post for more details";
+    item = new MYSITE.domain.newsItem(title, pubDate, link, content);
+    news.push(item);
+
     title = "New Software Study Group";
     pubDate = "9/4/2014";
     link = "#";
