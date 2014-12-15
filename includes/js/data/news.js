@@ -9,6 +9,13 @@
 
     //CREATE NEWS ITEMS AND ADD TO ARRAY
 
+    title = "Thanksgiving in Colombia";
+    pubDate = "12/15/2014";
+    link = "#";
+    content = "Just returned from a short trip to Colombia over the Thanksgiving Holiday.  Check out my blog post for a few more details.";
+    item = new MYSITE.domain.newsItem(title, pubDate, link, content);
+    news.push(item);
+
     title = "HTML5 Conference";
     pubDate = "10/22/2014";
     link = "#";
