@@ -9,6 +9,13 @@
 
     //CREATE NEWS ITEMS AND ADD TO ARRAY
 
+    title = "New Job!";
+    pubDate = "2/15/2015";
+    link = "#";
+    content = "I am excited to be joining a startup tomorrow.  I will be focusing on front-end development";
+    item = new MYSITE.domain.newsItem(title, pubDate, link, content);
+    news.push(item);
+
     title = "Thanksgiving in Colombia";
     pubDate = "12/15/2014";
     link = "#";
