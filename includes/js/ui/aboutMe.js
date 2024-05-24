@@ -24,10 +24,10 @@ $(document).ready(function() {
 
             switch (index) {
                 case 0:
-                    $('#imageTwo').hide().attr('src', 'includes/img/acacia.png').fadeIn(700);
+                    $('#imageTwo').hide().attr('src', 'includes/img/badger.png').fadeIn(700);
                     break;
                 case 1:
-                    $('#imageTwo').hide().attr('src', 'includes/img/india.png').fadeIn(700);
+                    $('#imageTwo').hide().attr('src', 'includes/img/technology.png').fadeIn(700);
                     break;
                 case 2:
                     $('#imageTwo').hide().attr('src', 'includes/img/bodiumcastle.png').fadeIn(700);

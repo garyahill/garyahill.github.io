@@ -1,67 +1,34 @@
-/**
- * Created by Gary Hill on 9/4/2014.
- */
 (function () {
 
     MYSITE.data.news = [];
     var news = MYSITE.data.news;
     var item, title, pubDate, link, content;
 
-    //CREATE NEWS ITEMS AND ADD TO ARRAY
-
-    title = "New Job!";
-    pubDate = "2/15/2015";
-    link = "#";
-    content = "I am excited to be joining a startup tomorrow.  I will be focusing on front-end development";
-    item = new MYSITE.domain.newsItem(title, pubDate, link, content);
-    news.push(item);
-
-    title = "Thanksgiving in Colombia";
-    pubDate = "12/15/2014";
-    link = "#";
-    content = "Just returned from a short trip to Colombia over the Thanksgiving Holiday.  Check out my blog post for a few more details.";
-    item = new MYSITE.domain.newsItem(title, pubDate, link, content);
-    news.push(item);
-
-    title = "HTML5 Conference";
-    pubDate = "10/22/2014";
-    link = "#";
-    content = "The 2 day HTML5 Conference (San Francisco) just wrapped up.  This was my second go around and I found myself in a better position to absorb the vast amount of information this year.  I particularly enjoyed the AngularJS and Web Components talks.";
-    item = new MYSITE.domain.newsItem(title, pubDate, link, content);
-    news.push(item);
-
     title = "Back from Brazil";
-    pubDate = "10/19/2014";
+    pubDate = "5/20/2024";
     link = "#";
-    content = "I just returned from my 3rd trip to Rio.  Check out my blog post for more details.";
+    content = "I am back from traveling and am currently pursuing new employment opportunities.";
     item = new MYSITE.domain.newsItem(title, pubDate, link, content);
     news.push(item);
 
-    title = "New Software Study Group";
-    pubDate = "9/4/2014";
+    title = "Taking a sabbatical";
+    pubDate = "6/1/2023";
     link = "#";
-    content = "I am expanding my work-based software study group to include a few more friends and former colleagues.  We'll be meeting one per week to work on algorithms, share knowledge with each other and exchange project ideas.";
+    content = "My previous employer has laid off all full-time employees.  In light of that development, I've decided to some time off work to travel to Brazil and work on my language skills and practice jiu jitsu.";
     item = new MYSITE.domain.newsItem(title, pubDate, link, content);
     news.push(item);
 
-    title = "Fall Travel Plans";
-    pubDate = "9/1/2014";
+    title = "Hello Boise";
+    pubDate = "3/20/2020";
     link = "#";
-    content = "<ul><li>October - Rio de Janeiro</li><li>November - Bogota</li><li>December - Atlanta</li></ul>";
+    content = "I bought a beautiful old house in Boise, Idaho.";
     item = new MYSITE.domain.newsItem(title, pubDate, link, content);
     news.push(item);
 
-    title = "Posted Minesweeper to GitHub";
-    pubDate = "8/26/2014";
+    title = "Personal Milestone";
+    pubDate = "11/15/2019";
     link = "#";
-    content = "Just posted my own version of the game Minesweeper.  I decided to build a javascript version as a fun side project and to get more familiar with GitHub.";
-    item = new MYSITE.domain.newsItem(title, pubDate, link, content);
-    news.push(item);
-
-    title = "Brazilian Jiu Jitsu in Brazil";
-    pubDate = "8/10/2014";
-    link = "#";
-    content = "I'll be traveling to Rio in October to train a group of friends from Romulo Melo Jiu Jitsu Academy in San Francisco.  This will be our second time training in Rio.";
+    content = "After 9 years of training I recieved my Brazilian Jiu Jitsu black belt from Romulo Melo in San Francisco.";
     item = new MYSITE.domain.newsItem(title, pubDate, link, content);
     news.push(item);
 

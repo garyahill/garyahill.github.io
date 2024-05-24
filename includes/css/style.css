@@ -157,7 +157,7 @@ hr{
     background: url(../img/bodiumcastle.png) no-repeat no-repeat -9999px -9999px;
 }
 #preLoadThree {
-    background: url(../img/india.png) no-repeat no-repeat -9999px -9999px;
+    background: url(../img/technology.png) no-repeat no-repeat -9999px -9999px; opacity: 50%;
 }
 
 #social_icons {
@@ -287,3 +287,34 @@ hr{
 	color:#2F5367;
 	margin-bottom:5px;
 }
+
+.experience {
+	margin-top: 20px;
+}
+
+.jobList {
+	margin: 10px 0 0 0;
+}
+
+.jobList li:nth-child(1) {
+    font-weight: bold;
+    color: #2F5367;
+    font-style: italic;
+    margin: 0;
+    padding-top: 3px;
+	list-style-type: none;
+}
+
+.jobList li:nth-child(2) {
+	font-weight: normal;
+    margin: 0;
+    padding-top: 3px;
+	list-style-type: none;
+}
+
+.jobList li {
+	padding-top: 3px;
+	list-style: circle;
+	margin: 0 0 0 16px;
+}
+
