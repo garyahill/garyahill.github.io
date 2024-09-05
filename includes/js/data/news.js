@@ -5,9 +5,9 @@
     var item, title, pubDate, link, content;
 
     title = "Back from Brazil";
-    pubDate = "5/20/2024";
+    pubDate = "8/1/2024";
     link = "#";
-    content = "I am back from traveling and am currently pursuing new employment opportunities.";
+    content = "I am back from traveling, engaging in personal projects and contract work and am currently pursuing new long term employment opportunities.";
     item = new MYSITE.domain.newsItem(title, pubDate, link, content);
     news.push(item);
 
