@@ -3,7 +3,6 @@ jQuery.githubUser = function(username, callback) {
 };
  
 jQuery.fn.loadRepositories = function(username, limit, link) {
-
     //MY MAIN WEBSITE REPOSITORY
     var MAIN_REPO_NAME = 'garyahill.github.io';
 
@@ -13,7 +12,7 @@ jQuery.fn.loadRepositories = function(username, limit, link) {
 		var repos = data;
         repos = removeMainWebsiteRepo(repos);
 
-		sortByNumberOfWatchers(repos);
+		sortReposByMyArbitraryOrder(repos);
 		target.empty();
         //Omitting (most watched) for now
         //target.append('<h3 class="feedTitle">Github Repositories (most watched)</h3><hr/>');
@@ -21,12 +20,12 @@ jQuery.fn.loadRepositories = function(username, limit, link) {
 		var n = 1;
 		$(repos).each(function() {
 			if(n<=limit)
-				{
-                //Omitting watchers for now
+			{
+				//Omitting watchers for now
 				//target.append('<div class="ItemTitle"><a href="'+ link + this.name + '">' + this.name + '</a>(' + this.watchers + ')</div>');
-                    target.append('<div class="ItemTitle"><a href="'+ link + this.name + '">' + this.name + '</a></div>');
+				target.append('<div class="ItemTitle"><a href="'+ link + this.name + '">' + this.name + '</a></div>');
 				target.append('<div class="ItemContent">'+this.description+'</div><hr/>');
-				}
+			}
 			n = n+1;
 			});
 		target.append('<p class="feedFooter"><a href="' + link + '">Github Repositories >></a></p>');
@@ -36,8 +35,15 @@ jQuery.fn.loadRepositories = function(username, limit, link) {
 	function sortByNumberOfWatchers(repos) {
 		repos.sort(function(a,b) {
 			return b.watchers - a.watchers;
-			});
-		}
+		});
+	}
+
+	function sortReposByMyArbitraryOrder(repos) {
+		var order = ['PorterLegacyGroup', 'AssetExitStrategies', 'Minesweeper', 'FaqDemo', 'ObjectKeyHash'];
+		repos.sort(function (a, b) {
+			return order.indexOf(b.name) < order.indexOf(a.name) ? 1 : -1;
+		});
+	}
 
     function removeMainWebsiteRepo (repos)  {
         var output = [];
